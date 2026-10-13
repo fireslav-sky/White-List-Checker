@@ -1,6 +1,6 @@
 # White List Checker 🌐
 
-[![Android CI & Build](https://github.com/your-username/white-list-checker/actions/workflows/build.yml/badge.svg)](https://github.com/your-username/white-list-checker/actions)
+[![Android CI & Build](https://github.com/fireslav-sky/White-List-Checker/actions/workflows/build.yml/badge.svg)](https://github.com/your-username/white-list-checker/actions)
 [![Android](https://img.shields.io/badge/Android-8.0%2B%20(API%2026%2B)-3DDC84.svg?logo=android&logoColor=white)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF.svg?logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4.svg?logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
