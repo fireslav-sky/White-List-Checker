@@ -70,7 +70,7 @@
 
 ### Клонирование репозитория
 ```bash
-git clone https://github.com/your-username/white-list-checker.git
+git clone https://github.com/fireslav-sky/White-List-Checker.git
 cd white-list-checker
 ```
 
