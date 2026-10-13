@@ -24,6 +24,19 @@ jobs:
           java-version: '17'
           cache: 'gradle'
 
+      - name: Generate debug keystore
+  run: |
+    keytool -genkeypair \
+      -alias androiddebugkey \
+      -keyalg RSA \
+      -keysize 2048 \
+      -storetype PKCS12 \
+      -keystore "$GITHUB_WORKSPACE/debug.keystore" \
+      -storepass android \
+      -keypass android \
+      -dname "CN=Android Debug,O=Android,C=US" \
+      -validity 36500
+    
       - name: Grant Execute Permission for Gradlew
         run: chmod +x gradlew
 
