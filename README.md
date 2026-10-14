@@ -86,34 +86,6 @@ cd white-list-checker
 ./gradlew testDebugUnitTest
 ```
 
----
-
-## 📦 Релизная сборка (GitHub Release)
-
-### 1. Подготовка ключа подписи
-Для сборки релизного APK создайте или укажите ваш keystore:
-```bash
-keytool -genkey -v -keystore my-upload-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
-```
-
-### 2. Сборка Release APK
-```bash
-export KEYSTORE_PATH="$(pwd)/my-upload-key.jks"
-export STORE_PASSWORD="your_keystore_password"
-export KEY_PASSWORD="your_key_password"
-
-./gradlew assembleRelease
-```
-Файл APK будет сгенерирован в `app/build/outputs/apk/release/app-release.apk`.
-
-### 3. Автоматическая сборка в GitHub Actions
-Репозиторий содержит готовый workflow `.github/workflows/build.yml`.
-При каждом коммите или создании тега вида `v1.0.0` GitHub Actions автоматически:
-1. Прогоняет модульные тесты.
-2. Собирает Debug APK.
-3. Прикрепляет сгенерированный APK к артефактам сборки для моментальной загрузки.
-
----
 
 ## 📄 Лицензия
 
