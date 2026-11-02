@@ -18,3 +18,4 @@ build/
 *.aab
 debug.keystore
 debug.keystore.base64
+*.jks
